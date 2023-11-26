@@ -1,0 +1,42 @@
+{
+    "sourceFile": "lib/homepage.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1700974963239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700975077875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const HomePage({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Placeholder();\r\n+    return Scaffold();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975090780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,8 @@\n   const HomePage({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n+    Size size = MediaQuery.of(context).size;\r\n     return Scaffold();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975302617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,11 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n-    return Scaffold();\r\n+    return Scaffold(\r\n+      appBar: AppBar(\r\n+        title: Text('Home Page'),\r\n+      ),\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975335996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,10 @@\n     return Scaffold(\r\n       appBar: AppBar(\r\n         title: Text('Home Page'),\r\n       ),\r\n+      floatingActionButton: FloatingActionButton(onPressed: () {\r\n+        \r\n+      },),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975350427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n         title: Text('Home Page'),\r\n       ),\r\n       floatingActionButton: FloatingActionButton(\r\n         onPressed: () {},\r\n+        child: Icon(Icons.search_rounded),\r\n       ),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975378377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,11 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     Size size = MediaQuery.of(context).size;\r\n     return Scaffold(\r\n+      drawer: Drawer(\r\n+        backgroundColor: Colors.white,\r\n+      ),\r\n       appBar: AppBar(\r\n         title: Text('Home Page'),\r\n       ),\r\n       floatingActionButton: FloatingActionButton(\r\n"
+                }
+            ],
+            "date": 1700974963239,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass HomePage extends StatelessWidget {\r\n  const HomePage({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return const Placeholder();\r\n  }\r\n}"
+        }
+    ]
+}

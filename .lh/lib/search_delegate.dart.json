@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/search_delegate.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1700981512799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700981548242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n class Search extends SearchDelegate {\r\n   @override\r\n   List<Widget>? buildActions(BuildContext context) {\r\n-    throw UnimplementedError();\r\n+    return [];\r\n   }\r\n \r\n   @override\r\n   Widget? buildLeading(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1700981565325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,13 @@\n \r\n class Search extends SearchDelegate {\r\n   @override\r\n   List<Widget>? buildActions(BuildContext context) {\r\n-    return [];\r\n+    return [\r\n+      IconButton(onPressed: () {\r\n+        \r\n+      }, icon: icon)\r\n+    ];\r\n   }\r\n \r\n   @override\r\n   Widget? buildLeading(BuildContext context) {\r\n"
+                }
+            ],
+            "date": 1700981512799,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass Search extends SearchDelegate {\r\n  @override\r\n  List<Widget>? buildActions(BuildContext context) {\r\n    \r\n    throw UnimplementedError();\r\n  }\r\n\r\n  @override\r\n  Widget? buildLeading(BuildContext context) {\r\n    \r\n    throw UnimplementedError();\r\n  }\r\n\r\n  @override\r\n  Widget buildResults(BuildContext context) {\r\n   \r\n    throw UnimplementedError();\r\n  }\r\n\r\n  @override\r\n  Widget buildSuggestions(BuildContext context) {\r\n   \r\n    throw UnimplementedError();\r\n  }\r\n\r\n}"
+        }
+    ]
+}

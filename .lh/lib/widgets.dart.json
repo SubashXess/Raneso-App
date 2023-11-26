@@ -1,0 +1,78 @@
+{
+    "sourceFile": "lib/widgets.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1700974976731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700974984902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,10 @@\n+import 'package:flutter/material.dart';\r\n \r\n+class RoundedButton extends StatelessWidget {\r\n+  const RoundedButton({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Placeholder();\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1700974991246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   const RoundedButton({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Placeholder();\r\n+    return Container();\r\n   }\r\n\\ No newline at end of file\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1700975004703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n   const RoundedButton({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return MaterialButton(\r\n+      onPressed: () {},\r\n+    );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975014843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,8 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n       onPressed: () {},\r\n+      child: Text(label),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975022273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n \r\n class RoundedButton extends StatelessWidget {\r\n   const RoundedButton({super.key});\r\n \r\n+  final String label;\r\n+\r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n       onPressed: () {},\r\n"
+                },
+                {
+                    "date": 1700975030325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n class RoundedButton extends StatelessWidget {\r\n   const RoundedButton({super.key});\r\n \r\n   final String label;\r\n+  final VoidCallback onPressed;\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n"
+                },
+                {
+                    "date": 1700975036168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n-      onPressed: () {},\r\n+      onPressed: onPressed,\r\n       child: Text(label),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975045326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n   @override\r\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n       onPressed: onPressed,\r\n+      minWidth: double.infinity,\r\n       child: Text(label),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975053122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n import 'package:flutter/material.dart';\r\n+import 'package:raneso_app/constants.dart';\r\n \r\n class RoundedButton extends StatelessWidget {\r\n   const RoundedButton({super.key});\r\n \r\n@@ -10,8 +11,9 @@\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n       onPressed: onPressed,\r\n       minWidth: double.infinity,\r\n+      color: AppThemeColor,\r\n       child: Text(label),\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700975069407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n   Widget build(BuildContext context) {\r\n     return MaterialButton(\r\n       onPressed: onPressed,\r\n       minWidth: double.infinity,\r\n+      height: 50.0,\r\n       color: AppThemeColor,\r\n       child: Text(label),\r\n     );\r\n   }\r\n"
+                },
+                {
+                    "date": 1700976574411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,4 +18,14 @@\n       child: Text(label),\r\n     );\r\n   }\r\n }\r\n+\r\n+\r\n+class DrawerWidget extends StatelessWidget {\r\n+  const DrawerWidget({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Placeholder();\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1700976580941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,7 @@\n   const DrawerWidget({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Placeholder();\r\n+    return Container();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700976602683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,7 +24,49 @@\n   const DrawerWidget({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return Container();\r\n+    return  Drawer(\r\n+        backgroundColor: Colors.white,\r\n+        child: Column(\r\n+          mainAxisSize: MainAxisSize.min,\r\n+          children: [\r\n+            Container(\r\n+              padding: const EdgeInsets.all(16.0),\r\n+              child: const Column(\r\n+                mainAxisSize: MainAxisSize.min,\r\n+                children: [\r\n+                  CircleAvatar(\r\n+                      radius: 36.0,\r\n+                      backgroundImage: AssetImage('assets/avatar.jpg')),\r\n+                  SizedBox(height: 10.0),\r\n+                  Text('Andrea Piacquadio',\r\n+                      style: TextStyle(\r\n+                          fontSize: 18.0, fontWeight: FontWeight.w700)),\r\n+                  SizedBox(height: 4.0),\r\n+                  Text('+91 93378 56231',\r\n+                      style: TextStyle(\r\n+                          fontSize: 14.0, fontWeight: FontWeight.w500)),\r\n+                ],\r\n+              ),\r\n+            ),\r\n+            const Divider(height: 32.0),\r\n+            ListView(\r\n+              shrinkWrap: true,\r\n+              children: const [\r\n+                Row(\r\n+                  crossAxisAlignment: CrossAxisAlignment.center,\r\n+                  children: [\r\n+                    Icon(Icons.person_rounded),\r\n+                    SizedBox(width: 10.0),\r\n+                    Text('Profile',\r\n+                        style: TextStyle(\r\n+                            fontSize: 16.0, fontWeight: FontWeight.w500)),\r\n+                  ],\r\n+                ),\r\n+              ],\r\n+            ),\r\n+          ],\r\n+        ),\r\n+      );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1700976654931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,17 +52,20 @@\n           const Divider(height: 32.0),\r\n           ListView(\r\n             shrinkWrap: true,\r\n             children: const [\r\n-              Row(\r\n-                crossAxisAlignment: CrossAxisAlignment.center,\r\n-                children: [\r\n-                  Icon(Icons.person_rounded),\r\n-                  SizedBox(width: 10.0),\r\n-                  Text('Profile',\r\n-                      style: TextStyle(\r\n-                          fontSize: 16.0, fontWeight: FontWeight.w500)),\r\n-                ],\r\n+              Container(\r\n+                color: Colors.deepPurple.shade200,\r\n+                child: Row(\r\n+                  crossAxisAlignment: CrossAxisAlignment.center,\r\n+                  children: [\r\n+                    Icon(Icons.person_rounded),\r\n+                    SizedBox(width: 10.0),\r\n+                    Text('Profile',\r\n+                        style: TextStyle(\r\n+                            fontSize: 16.0, fontWeight: FontWeight.w500)),\r\n+                  ],\r\n+                ),\r\n               ),\r\n             ],\r\n           ),\r\n         ],\r\n"
+                },
+                {
+                    "date": 1700976672209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n             shrinkWrap: true,\r\n             children: [\r\n               Container(\r\n                 color: Colors.deepPurple.shade200,\r\n+                padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),\r\n                 child: Row(\r\n                   crossAxisAlignment: CrossAxisAlignment.center,\r\n                   children: [\r\n                     Icon(Icons.person_rounded),\r\n"
+                }
+            ],
+            "date": 1700974976731,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

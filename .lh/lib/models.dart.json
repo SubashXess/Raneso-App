@@ -1,0 +1,58 @@
+{
+    "sourceFile": "lib/models.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1700976238082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1700976327700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,13 @@\n   final IconData icon;\r\n \r\n   const DrawerModel({required this.title, required this.icon});\r\n \r\n-  static List<DrawerModel> generatedItem = [];\r\n+  static List<DrawerModel> generatedItem = [\r\n+    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n+    const DrawerModel(title: 'Activity', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n+  ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700976430066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n   static List<DrawerModel> generatedItem = [\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n-    const DrawerModel(title: 'Activity', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Activity', icon: Icons.insert_chart_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n   ];\r\n"
+                },
+                {
+                    "date": 1700976459973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   static List<DrawerModel> generatedItem = [\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n     const DrawerModel(title: 'Activity', icon: Icons.insert_chart_rounded),\r\n+    const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n-    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n   ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700976469967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n   static List<DrawerModel> generatedItem = [\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n-    const DrawerModel(title: 'Activity', icon: Icons.insert_chart_rounded),\r\n+    const DrawerModel(title: 'Reports', icon: Icons.insert_chart_rounded),\r\n     const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n   ];\r\n"
+                },
+                {
+                    "date": 1700976499124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,8 @@\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n     const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n     const DrawerModel(title: 'Reports', icon: Icons.insert_chart_rounded),\r\n     const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n+    const DrawerModel(title: 'Bookmarks', icon: Icons.bookmark_rounded),\r\n     const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n-    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n   ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700976507553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,7 @@\n     const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n     const DrawerModel(title: 'Reports', icon: Icons.insert_chart_rounded),\r\n     const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n     const DrawerModel(title: 'Bookmarks', icon: Icons.bookmark_rounded),\r\n-    const DrawerModel(title: 'Home', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Logout', icon: Icons.home_rounded),\r\n   ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700976515963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,7 @@\n     const DrawerModel(title: 'Messages', icon: Icons.message_rounded),\r\n     const DrawerModel(title: 'Reports', icon: Icons.insert_chart_rounded),\r\n     const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n     const DrawerModel(title: 'Bookmarks', icon: Icons.bookmark_rounded),\r\n-    const DrawerModel(title: 'Logout', icon: Icons.home_rounded),\r\n+    const DrawerModel(title: 'Logout', icon: Icons.logout_rounded),\r\n   ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700976536192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,6 +12,8 @@\n     const DrawerModel(title: 'Reports', icon: Icons.insert_chart_rounded),\r\n     const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n     const DrawerModel(title: 'Bookmarks', icon: Icons.bookmark_rounded),\r\n     const DrawerModel(title: 'Logout', icon: Icons.logout_rounded),\r\n+     const DrawerModel(title: 'Tell a Friend', icon: Icons.share),\r\n+      const DrawerModel(title: 'Logout', icon: Icons.logout_rounded),\r\n   ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700976552168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,7 @@\n     const DrawerModel(title: 'Lists', icon: Icons.list_alt_rounded),\r\n     const DrawerModel(title: 'Bookmarks', icon: Icons.bookmark_rounded),\r\n     const DrawerModel(title: 'Logout', icon: Icons.logout_rounded),\r\n     const DrawerModel(title: 'Tell a Friend', icon: Icons.share),\r\n-    const DrawerModel(title: 'Logout', icon: Icons.logout_rounded),\r\n+    const DrawerModel(title: 'Help and Feedback', icon: Icons.help_rounded),\r\n   ];\r\n }\r\n"
+                },
+                {
+                    "date": 1700979004139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,4 +16,11 @@\n     const DrawerModel(title: 'Tell a Friend', icon: Icons.share),\r\n     const DrawerModel(title: 'Help and Feedback', icon: Icons.help_rounded),\r\n   ];\r\n }\r\n+\r\n+class ListModel {\r\n+  final String title;\r\n+  final String subtitle;\r\n+  final String price;\r\n+  final String profits;\r\n+}\r\n"
+                }
+            ],
+            "date": 1700976238082,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nclass DrawerModel {\r\n  final String title;\r\n  final IconData icon;\r\n\r\n  const DrawerModel({required this.title, required this.icon});\r\n\r\n  static List<DrawerModel> generatedItem = [];\r\n}\r\n"
+        }
+    ]
+}
